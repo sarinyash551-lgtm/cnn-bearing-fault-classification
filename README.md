@@ -1,69 +1,110 @@
-# CNN-Based Fault Classification Using Spectrograms on the CWRU Bearing Dataset
+# 🔧 CNN Bearing Fault Classification
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![CNN](https://img.shields.io/badge/Model-CNN-red)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-This project implements a Convolutional Neural Network (CNN) for bearing fault classification using spectrogram representations of vibration signals from the Case Western Reserve University (CWRU) Bearing Dataset.
+## 📌 Overview
 
-The objective is to automatically identify bearing conditions such as normal operation, inner-race faults, and outer-race faults by transforming vibration signals into spectrogram images and applying deep learning techniques for classification.
+This project uses a **Convolutional Neural Network (CNN)** to classify rolling bearing faults from vibration signal data. The model learns fault patterns and predicts the operating condition of bearings for intelligent fault diagnosis.
 
-## Dataset
+---
 
-The project uses the Case Western Reserve University (CWRU) Bearing Dataset, a widely used benchmark dataset for machine condition monitoring and fault diagnosis.
+## ✨ Features
 
-Classes used:
+- CNN-based fault classification
+- Deep Learning implementation using TensorFlow/Keras
+- Image-based training approach
+- Performance visualization
+- Easy-to-understand workflow
 
-* Normal Bearing Condition
-* Inner Race Fault
-* Outer Race Fault
+---
 
-## Methodology
+## 🛠 Tech Stack
 
-1. Load vibration signal data from the CWRU dataset.
-2. Convert signals into spectrogram representations.
-3. Preprocess and organize images by fault category.
-4. Train a Convolutional Neural Network (CNN).
-5. Evaluate classification performance using test data.
-6. Visualize results and model performance.
+- Python
+- TensorFlow
+- Keras
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Jupyter Notebook
 
-## Technologies Used
+---
 
-* Python
-* TensorFlow / Keras
-* NumPy
-* Matplotlib
-* Scikit-learn
-* Signal Processing
-* Deep Learning
-
-## Project Structure
+## 📂 Project Structure
 
 ```text
 cnn-bearing-fault-classification/
 │
-├── Yash_sarin-202480201.ipynb
+├── cnn_bearing_fault_classification.ipynb
 ├── Results_images/
-├── report.pdf
 ├── requirements.txt
-└── README.md
+├── README.md
+├── LICENSE
+├── .gitignore
+└── .gitattributes
 ```
 
-## Results
+---
 
-The trained CNN successfully classifies bearing conditions using spectrogram images derived from vibration signals.
+## 🚀 Installation
 
-Result visualizations and performance metrics are available in the `Results_images` folder.
+```bash
+git clone https://github.com/sarinyash551-lgtm/cnn-bearing-fault-classification.git
+```
 
-## Future Improvements
+```bash
+cd cnn-bearing-fault-classification
+```
 
-* Multi-fault classification
-* Real-time fault monitoring
-* Transfer learning approaches
-* Deployment for predictive maintenance systems
+```bash
+pip install -r requirements.txt
+```
 
-## Author
+Launch the notebook:
 
-Yash Sarin
+```bash
+jupyter notebook
+```
 
-Department of Artificial Intelligence
+---
 
-Woosong University
+## 📊 Results
+
+The trained CNN successfully classifies different bearing fault conditions using vibration signal data.
+
+Model evaluation includes:
+
+- Training Accuracy
+- Validation Accuracy
+- Loss Curves
+- Prediction Results
+
+Visual outputs are available inside the **Results_images** folder.
+
+---
+
+## 🔮 Future Improvements
+
+- Convert notebook into a Python package
+- Deploy using Streamlit
+- Add model inference API
+- Docker support
+- Real-time prediction
+
+---
+
+## 👨‍💻 Author
+
+**Yash Sarin**
+
+GitHub:
+https://github.com/sarinyash551-lgtm
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
